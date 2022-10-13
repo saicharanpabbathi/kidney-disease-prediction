@@ -68,9 +68,9 @@ x=2
 
 if(st.button("predict")):
     x=prediction(age,bp,float(sg),al,su,rbc,float(bgr),float(bu),float(sc),float(sod),float(pot),float(hemo),int(wc),float(rc),htn,dm,cad,appeit,pe,ane)
-if(x==1):
+if(x==0):
     st.success("The patient don't have the disease")
-elif(x==0):
+elif(x==1):
     st.error("The patient has the disease")
 
 
